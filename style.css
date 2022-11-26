@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   height: 100vh;
   display: flex;
@@ -11,29 +10,31 @@ body {
   justify-content: center;
   background-color: black;
 }
-
 #top,
 #bottom {
   word-wrap: break-word;
   background-color: whitesmoke;
   height: 2rem;
-  /* margin-top: -23px; */
+  border-bottom: 1px solid gray;
   text-align: end;
   font-size: 35px;
 }
-
+#bottom {
+  margin-bottom: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 .container {
   width: 20rem;
   border-radius: 15px;
-  /* height: 540px; */
   padding: 30px;
   border: 5px solid wheat;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 gray;
+  box-shadow: 0 8px 32px 0 aqua;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid aqua;
 }
 .wrapper {
   display: grid;
@@ -48,6 +49,7 @@ body {
 #del {
   grid-column: 3 / -1;
   width: 100%;
+  margin: 5px;
 }
 .lerato {
   width: 100% !important;
@@ -57,7 +59,7 @@ body {
 #div {
   grid-column: 3 / -1;
   width: 100%;
-  margin: 0 !important;
+  margin: 5px !important;
 }
 #minus {
   grid-column: 3 / -1;
@@ -70,33 +72,31 @@ body {
 #comma {
   grid-column: 3 / -1;
 }
-button {
-  /* transform: translateY(30%); */
-}
-
 .btn {
   font-size: 1.3rem;
   width: 50px;
+  margin: 5px;
   background: whitesmoke;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0px 4px 30px;
   border: 1px solid black;
 }
 
 .btn:hover {
-  background-color: gray;
+  background-color: aqua;
 }
 
 .btn-cal {
   width: 140px;
   font-size: 1.5rem;
-  /* height: 62px; */
   background: whitesmoke;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-right: 11px;
   border: 1px solid black;
 }
-
+.btn-cal:hover {
+  background-color: aqua;
+}
 #times {
   margin-left: 13px;
 }
@@ -106,16 +106,14 @@ button {
 
 #del {
   font-size: 13px;
-  /* height: 62px; */
 }
 
 .clear,
 .clear:hover {
-  background-color: gray;
+  background-color: aqua;
   font-size: 1.5rem;
   width: 140px;
-  border-radius: 5px;
-  /* height: 62px; */
+  border-radius: 15px;
   box-shadow: 0px 4px 30px;
   border: 1px solid black;
 }
@@ -131,32 +129,20 @@ button {
   div .col {
     padding-left: 0;
   }
-  .btn {
-    /* font-size: 20px; */
-    /* margin-top: 25px;
-    padding: -10%; */
-    /* height: 55px; */
-    --bs-btn-padding-x: 0rem;
-    --bs-btn-padding-y: 0rem;
-  }
   .clear,
   .clear:hover {
     font-size: 1rem;
     width: 105px;
-    /* margin-top: 25px; */
     height: 55px;
   }
   .btn-cal {
     font-size: 1rem;
     width: 100px;
-    /* margin-top: 25px; */
-    /* height: 55px; */
   }
   .lerato {
     width: 90% !important;
   }
   #del {
-    /* margin-top: 25px; */
     font-size: 14px;
     height: 55px;
     width: 90%;
