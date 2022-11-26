@@ -8,12 +8,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: purple; /*rgb(178, 85, 218);*/
+   background-image: url(./img/back2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
-.col {
+
+#top, #bottom {
+  word-wrap: break-word;
+  background-color: whitesmoke; 
+  height: 60px; 
+  margin-top: -23px;
   text-align: end;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .container {
@@ -23,96 +30,101 @@ body {
   height: 540px;
   padding: 30px;
   border-radius: 15px;
-  background: violet;
-  border: 5px solid orchid;
-  /*background: rgba( 255, 255, 255, 0.15 );
+  border: 5px solid wheat;
+  background: rgba( 255, 255, 255, 0.1 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 3.5px );
--webkit-backdrop-filter: blur( 3.5px );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
 border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );*/
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 button {
-   transform: translateY(90%); 
+   transform: translateY(95%); 
 }
 
 .btn {
   font-size: 1.5rem;
-  /* margin-top: 60px; */
-  padding: 5px;
-  color: orchid;
-  cursor: pointer;
   width: 50px;
-  background: purple;
-  border-radius: 2px;
+  background: wheat;
+  border-radius: 5px;
   box-shadow: 0px 4px 30px;
-  backdrop-filter: blur (4.7px);
-  border-style: none;
-  border: 1px solid blue;
-  transition: All 0.3s ease ease-in-out;
+  border: 1px solid black;
 }
 
 .btn:hover {
-  background-color: lightpink;
+  background-color: gray;
+  
 }
 
 .btn-cal {
   width: 140px;
   font-size: 1.5rem;
-  padding: 5px;
-  color: orchid;
-  cursor: pointer;
-  background: purple;
-  border-radius: 2px;
-  box-shadow: 0px 4px 30px;
-  backdrop-filter: blur (4.7px);
-  border-style: none;
-  border: 1px solid blue;
-  transition: All 0.3s ease ease-in-out;
+  height: 62px;
+  background: whitesmoke;
+  border-radius: 5px;
+  margin-right: 11px;
+  border: 1px solid black;
+}
+
+#times{
+  margin-left: 13px;
+}
+#div{
+  margin-left: 5px;
+}
+
+#del{
+  font-size: 18px;
+  height: 62px;
 }
 
 .clear,
 .clear:hover {
-  background-color: purple;
+  background-color: gray;
   font-size: 1.5rem;
   width: 140px;
-  margin-left: 9px;
-  padding: 5px;
-  color: orchid;
-  cursor: pointer;
-  border-radius: 2px;
+  border-radius: 5px;
+  height: 62px;
   box-shadow: 0px 4px 30px;
-  backdrop-filter: blur (4.7px);
-  border-style: none;
-  border: 1px solid blue;
-  transition: All 0.3s ease ease-in-out;
+  border: 1px solid black;
 }
 
 @media (width <= 400px) {
   .container {
     width: 300px;
-    height: 550px;
-    padding: -15px;
+    height: 575px;
+}
+#top, #bottom{
+  height: 70px;
+}
+div .col {
+  padding-left: 0;
 }
   .btn {
   font-size: 20px;
-  padding: 0px;
-  width: 30px;
+  margin-top: 25px;
+  padding: -10%;
   height: 55px;
-  grid-template-columns: auto;
+  --bs-btn-padding-x: 0rem;
+  --bs-btn-padding-y: 0rem;
 }
 .clear,
 .clear:hover {
-  background-color: purple;
   font-size: 1rem;
-  width: 90px;
+  width: 105px;
+  margin-top: 25px;
   height: 55px;
 }
-.btn-cal {
-  width: 90px;
-  font-size: 1.3rem;
+.btn-cal{
+  font-size: 1rem;
+  width: 100px;
+  margin-top: 25px;
   height: 55px;
 }
-
+#del {
+  margin-top: 25px;
+  font-size: 14px;
+  height: 55px;
+}
 }

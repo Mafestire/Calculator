@@ -22,14 +22,14 @@
     <div class="circle"></div>
 
     <div class="container">
-      <div class="row mt-4" style="height: 40px">
+      <div class="row  mt-4" style="height: 40px">
         <div class="col">
-          <div id="top" style="background-color: lightpink; height: 45px; margin-top: -23px;"></div>
-          <div id="bottom" style="background-color: lightpink; height: 45px;"></div>
+          <div id="top"></div>
+          <div id="bottom"></div>
         </div>
       </div>
       <div class="row" style="height: 75px">
-        <div class="col-6">
+        <div class="col">
           <button class="clear" id="clr" onclick="clearSum()">AC</button>
         </div>
         <div class="col">
@@ -91,12 +91,12 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row g-sm-4">
         <div class="col" style="height: 50px">
-          <button class="btn me-1 fs-6 mt-1" id="del" onclick="delNum()" style="height: 55px;">DEL</button>
+          <button class="btn " id="del" onclick="delNum()">DEL</button>
         </div>
         <div class="col" style="height: 50px">
-          <button class="btn me-2" id="0" onclick="addToSum('0')">0</button>
+          <button class="btn" id="zero" onclick="addToSum('0')">0</button>
         </div>
         <div class="col" style="height: 50px">
           <button class="btn-cal" id="equal" onclick="evaluateSum()">
