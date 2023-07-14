@@ -29,10 +29,12 @@
         <div class="wrapper">
           <button class="clear" id="clr" onclick="clearSum()">AC</button>
           <button class="btn" id="del" onclick="delNum()">DEL</button>
-          <button class="btn lerato" value="7" id="7" onclick="addToSum('7')">
+          <button class="btn lerato left" value="7" id="7" onclick="addToSum('7')">
             7
           </button>
-          <button class="btn lerato" id="8" onclick="addToSum('8')">8</button>
+          <button class="btn lerato right" id="8" onclick="addToSum('8')">8</button>
+          <button class="btn lerato " id="9" onclick="addToSum('9')">9</button>
+
           <button
             class="btn operators"
             id="plus"
@@ -40,8 +42,9 @@
           >
             &plus;
           </button>
-          <button class="btn lerato" id="9" onclick="addToSum('9')">9</button>
-          <button class="btn lerato" id="6" onclick="addToSum('6')">6</button>
+          <button class="btn lerato left" id="6" onclick="addToSum('6')">6</button>
+          <button class="btn lerato right" id="5" onclick="addToSum('5')">5</button>
+          <button class="btn lerato " id="4" onclick="addToSum('4')">4</button>
           <button
             class="btn operators"
             id="times"
@@ -49,17 +52,19 @@
           >
             &times;
           </button>
-          <button class="btn lerato" id="5" onclick="addToSum('5')">5</button>
-          <button class="btn lerato" id="4" onclick="addToSum('4')">4</button>
+
+        
+          <button class="btn lerato left" id="3" onclick="addToSum('3')">3</button>
+          <button class="btn lerato right" id="2" onclick="addToSum('2')">2</button>
+          <button class="btn lerato " id="1" onclick="addToSum('1')">1</button>
           <button
-            class="btn operators"
-            id="div"
-            onclick="addToSum('/'); disabled = true;"
-          >
-            &divide;
-          </button>
-          <button class="btn lerato" id="3" onclick="addToSum('3')">3</button>
-          <button class="btn lerato" id="2" onclick="addToSum('2')">2</button>
+          class="btn operators"
+          id="div"
+          onclick="addToSum('/'); disabled = true;"
+        >
+          &divide;
+        </button>
+
           <button
             class="btn"
             id="minus"
@@ -67,8 +72,7 @@
           >
             &minus;
           </button>
-          <button class="btn lerato" id="1" onclick="addToSum('1')">1</button>
-          <button class="btn lerato" id="zero" onclick="addToSum('0')">
+          <button class="btn lerato right" id="zero" onclick="addToSum('0')">
             0
           </button>
           <button
